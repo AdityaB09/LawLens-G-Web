@@ -2,6 +2,7 @@ import { getContracts } from "../../lib/api";
 import ContractCard from "../../components/ContractCard";
 import ContractUploadForm from "../../components/ContractUploadForm";
 import PDFUploadForm from "../../components/PDFUploadForm";
+export const dynamic = "force-dynamic";
 
 export default async function ContractsPage() {
   const contracts = await getContracts();
